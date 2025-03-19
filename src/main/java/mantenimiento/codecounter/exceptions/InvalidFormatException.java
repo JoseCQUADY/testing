@@ -3,17 +3,17 @@ package mantenimiento.codecounter.exceptions;
 import mantenimiento.codecounter.constants.ReasonInvalidFormat;
 
 public class InvalidFormatException extends Exception {
-    private String fileName = "";
+  private String fileName = "";
 
-    public InvalidFormatException(ReasonInvalidFormat error, String lineOfCode) {
-        super(error.toString() + "\nLinea: " + lineOfCode);
-    }
+  public InvalidFormatException(ReasonInvalidFormat error, String lineOfCode) {
+    super(error.toString() + "\nLinea: " + lineOfCode);
+  }
 
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
-    }
+  public void setFileName(String fileName) {
+    this.fileName = fileName;
+  }
 
-    public String getFileName() {
-        return this.fileName;
-    }
+  public String getFileName() {
+    return this.fileName;
+  }
 }
